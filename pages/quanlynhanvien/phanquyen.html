@@ -197,39 +197,179 @@
 				</nav>
 			</div>
 		</div>
-		<div class="page-wrapper">
-			<div class="row mt-3">
-				<div class="col-xl-9 mx-auto">
-					<h6 class="mt-5 mb-0 text-uppercase">Doanh Thu</h6>
-					<hr>
-					<div class="card">
-						<div class="card-body">
-							<div class="chart-container1">
-								<div class="chartjs-size-monitor"
-									style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
-									<div class="chartjs-size-monitor-expand"
-										style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-										<div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
-										</div>
-									</div>
-									<div class="chartjs-size-monitor-shrink"
-										style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-										<div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
-									</div>
-								</div>
-								<canvas id="chart2" width="1106" height="425"
-									style="display: block; height: 340px; width: 885px;"
-									class="chartjs-render-monitor"></canvas>
-							</div>
-						</div>
-					</div>
+		<div class="page-wrapper ">
+			 <div class="row mt-3">
+        <div class="col-3 mt-3">
+            <div class="card">
+                <div class="card-header mb-2">Tạo quyền</div>
+                <div class="card-body mb-2">
+                    <label for="" class="mb-2">Tên quyền</label>
+                    <input class="form-control" type="text">
+                    <label for="" class="mb-2 mt-2">Trạng thái</label>
+                    <select name="" class="form-select mb-2 mt-2 " id="">
+                        <option value="1">Hiển thị</option>
+                        <option value="2">Tạm tắt</option>
+                    </select>
+                </div>
+                <div class="card-footer text-end">
+                    <button type="button" class="btn btn-outline-info text- px-2 text-end">Thêm mới</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-6 mt-3">
+            <div class="card">
+                <div class="card-header text-center">Danh sách quyền</div>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th class="align-middle text-center">Tìm kiếm</th>
+                            <th colspan="6"><input type="text" class="form-control"></th>
+                            <th class="text-center align-middle"><button type="button"
+                                    class="btn btn-outline-info fs-6 ">Tìm kiếm</button></th>
+                        </tr>
+                        <tr>
+                            <th><button type="button" class="btn btn-outline-danger text-px-1">Xoá</button></th>
+                            <th class="align-middle text-center">Tên quyền</th>
+                            <th colspan="3" class="align-middle text-center">Action</th>
+                        </tr>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <div class="form-check align-middle text-center ">
+                                    <input class="form-check-input ms-2" type="checkbox" value=""
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>Admin</td>
+                            <td colspan="3" class="align-middle text-center">
+                                <button type="button" class="btn btn-outline-success btn-sm">Cấp quyền</button>
+                                <button type="button" class="btn btn-outline-info btn-sm "data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Cập nhật</button>
+
+                                <button type="button" class="btn btn-outline-danger btn-sm "data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1">Xoá bỏ</button>
+                            </td>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Cập nhật</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-body mb-2">
+                                                <label for="" class="mb-2">Tên quyền</label>
+                                                <input class="form-control" type="text">
+                                                <label for="" class="mb-2 mt-2">Trạng thái</label>
+                                                <select name="" class="form-select mb-2 mt-2 " id="">
+                                                    <option value="1">Hiển thị</option>
+                                                    <option value="2">Tạm tắt</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Đóng</button>
+                                            <button type="button" class="btn btn-primary">Lưu</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-3 text-center" id="exampleModalLabel "> Xoá quyền !?
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body ">
+                                            <div class="card" style="background-color: rgb(205, 220, 255)">
+                                                <div class="card-header text-primary">
+                                                    Bạn có muốn xoá quyền <a
+                                                        class="text-danger link-offset-2 link-underline link-underline-opacity-0"
+                                                        href="#">ADMIN </a> này không ?
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Đóng</button>
+                                            <button type="button" class="btn btn-primary">Lưu</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+                    </table>
+                </div>
+            </div>
 
 
+        </div>
+        <div class="col-3 mt-3">
 
+            <div class="card">
+                <div class="card-header text-center align-middle "><b class="text-center align-middle">Phân quyền</b>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Quản lý Bàn
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Quản lý Kho
+                                </label>
 
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Quản lý Nhân Viên
+                                </label>
+                            </div>
 
-				</div>
-			</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Quản lý Món
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Quản lý Vật Tư
+                                </label>
+
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Quản lý Lương
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
 
 		</div>
 		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i
