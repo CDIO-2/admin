@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/admin/images/favicon-32x32.png" type="image/png" />
+	<!--plugins-->
+	<link href="assets/admin/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+	<link href="assets/admin/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/admin/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/admin/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="assets/admin/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/admin/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="assets/admin/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/admin/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="assets/admin/css/app.css" rel="stylesheet">
+	<link href="assets/admin/css/icons.css" rel="stylesheet">
+	<!-- Theme Style CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="assets/admin/css/header-colors.css" />
+	<title>Rocker - Bootstrap 5 Admin Dashboard Template</title>
+</head>
+
+<body
+	style="background-image: url('./assets/admin/images/3.png'); width: 100vw; height: 100vh; background-size: 100% 100%; overflow-x: hidden; background-repeat: no-repeat; overflow-y: hidden;">
+	<!--wrapper-->
+	<div class="wrapper ">
+		<!--start header wrapper-->
+		<div class="header-wrapper ">
+			<!--start header -->
+			<header>
+				<div class="topbar d-flex align-items-center">
+					<nav class="navbar navbar-expand">
+						<div class="topbar-logo-header">
+							<div class="px-5 mx-4">
+								<img src="assets/admin/images/Aurora_Coffee.png" style="scale: 6;" class="logo-icon"
+									alt="logo icon">
+							</div>
+
+						</div>
+						<div class="mobile-toggle-menu"><i class='bx bx-menu'></i></div>
+						<div class="top-menu ms-auto">
+						</div>
+						<div class="user-box dropdown">
+							<a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret"
+								href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<img src="assets/admin/images/avatars/avatar-2.png" class="user-img" alt="user avatar">
+								<div class="user-info ps-3">
+									<p class="user-name mb-0">Minh Tuan Le</p>
+									<p class="designattion mb-0">Manager</p>
+								</div>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="javascript:;"><i
+											class="bx bx-user"></i><span>Profile</span></a>
+								</li>
+								<li><a class="dropdown-item" href="javascript:;"><i
+											class="bx bx-cog"></i><span>Settings</span></a>
+								</li>
+								<li><a class="dropdown-item" href="javascript:;"><i
+											class='bx bx-home-circle'></i><span>Dashboard</span></a>
+								</li>
+								<li><a class="dropdown-item" href="javascript:;"><i
+											class='bx bx-dollar-circle'></i><span>Earnings</span></a>
+								</li>
+								<li><a class="dropdown-item" href="javascript:;"><i
+											class='bx bx-download'></i><span>Downloads</span></a>
+								</li>
+								<li>
+									<div class="dropdown-divider mb-0"></div>
+								</li>
+								<li><a class="dropdown-item" href="../adminGit/pages/"><i
+											class='bx bx-log-out-circle'></i><span>Logout</span></a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<!--end header -->
+			<!--navigation-->
+			<div class="nav-container primary-menu">
+				<div class="mobile-topbar-header">
+					<div>
+						<img src="assets/admin/images/logo-icon.png" class="logo-icon" alt="logo icon">
+					</div>
+					<div>
+						<h4 class="logo-text">Rukada</h4>
+					</div>
+					<div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
+					</div>
+				</div>
+				<nav class="navbar navbar-expand-xl w-100">
+					<ul class="navbar-nav justify-content-start flex-grow-1 gap-1">
+						<li class="nav-item">
+							<a class="nav-link" href="http://127.0.0.1:5501/index.html">
+								<div class="parent-icon"><i class="fa-solid fa-house"></i>
+								</div>
+								<div class="menu-title">Trang Chủ</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="http://127.0.0.1:5501/pages/ord.html">
+								<div class="parent-icon"><i class="fa-solid fa-mug-saucer"></i>
+								</div>
+								<div class="menu-title">Đặt Món</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="http://127.0.0.1:5501/pages/ban.html">
+								<div class="parent-icon"><i class="fa-solid fa-couch"></i>
+								</div>
+								<div class="menu-title">Quản Lý Bàn</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="http://127.0.0.1:5501/pages/diem-danh.html">
+								<div class="parent-icon"><i class="fa-solid fa-business-time"></i>
+								</div>
+								<div class="menu-title">Chấm Công Nhân Viên</div>
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"
+								data-bs-toggle="dropdown">
+								<div class="parent-icon"><i class="fa-solid fa-bars-progress"></i>
+								</div>
+								<div class="menu-title">Quản Lý Cafe</div>
+							</a>
+							<ul class="dropdown-menu">
+								<li> <a class="dropdown-item" href="http://127.0.0.1:5501/pages/quanlycafe/kho.html"
+										target="_blank"><i class="bx bx-right-arrow-alt"></i>Kho</a>
+								</li>
+								<li> <a class="dropdown-item" href="http://127.0.0.1:5501/pages/quanlycafe/mon.html"
+										target="_blank"><i class="bx bx-right-arrow-alt"></i>Món</a>
+								</li>
+								<li> <a class="dropdown-item" href="http://127.0.0.1:5501/pages/quanlycafe/vattu.html"
+										target="_blank"><i class="bx bx-right-arrow-alt"></i>Vật Tư</a>
+								</li>
+
+							</ul>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"
+								data-bs-toggle="dropdown">
+								<div class="parent-icon"><i class="fa-solid fa-person"></i>
+								</div>
+								<div class="menu-title">Quản Lý Nhân Viên</div>
+							</a>
+							<ul class="dropdown-menu">
+								<li> <a class="dropdown-item"
+										href="http://127.0.0.1:5501/pages/quanlynhanvien/phanquyen.html"
+										target="_blank"><i class="bx bx-right-arrow-alt"></i>Phân Quyền</a>
+								</li>
+								<li> <a class="dropdown-item"
+										href="http://127.0.0.1:5501/pages/quanlynhanvien/quanlyluong.html"
+										target="_blank"><i class="bx bx-right-arrow-alt"></i>Quản Lý Lương</a>
+								</li>
+								<li> <a class="dropdown-item"
+										href="http://127.0.0.1:5501/pages/quanlynhanvien/thuong-phat.html"
+										target="_blank"><i class="bx bx-right-arrow-alt"></i>Thưởng/Phạt</a>
+								</li>
+
+							</ul>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"
+								data-bs-toggle="dropdown">
+								<div class="parent-icon"><i class="fa-solid fa-money-check-dollar"></i>
+								</div>
+								<div class="menu-title">Quản Lý Doanh Thu</div>
+							</a>
+							<ul class="dropdown-menu">
+								<li> <a class="dropdown-item"
+										href="http://127.0.0.1:5501/pages/quanlydoanhthu/quanly.html" target="_blank"><i
+											class="bx bx-right-arrow-alt"></i>Quản Lý</a>
+								</li>
+								<li> <a class="dropdown-item"
+										href="http://127.0.0.1:5501/pages/quanlydoanhthu/quanly.html" target="_blank"><i
+											class="bx bx-right-arrow-alt"></i>Chủ Quán</a>
+								</li>
+
+
+							</ul>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="page-wrapper">
+			<div class="page-content">
+				<div class="row">
+					<div class="col-4 mt-3">
+						<div class="card radius-10 border-start border-0 border-3 border-info" style="height: 110px;">
+							<div class="card-body">
+								<div class="d-flex align-items-center">
+									<div>
+										<p class="mb-0 text-secondary">Tổng số đơn đặt hàng CAFE trong Tuần</p>
+										<h4 class="my-1 text-info">1,067</h4>
+										<p class="mb-0 font-13"> + 2.78% So Với Tuần Trước</p>
+									</div>
+									<div class="widgets-icons-2 rounded-circle bg-gradient-scooter text-white ms-auto">
+										<i class="bx bxs-cart"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4 mt-3">
+						<div class="card radius-10 border-start border-0 border-3 border-danger">
+							<div class="card-body">
+								<div class="d-flex align-items-center">
+									<div>
+										<p class="mb-0 text-secondary">Tổng Doanh Thu Trong Tuần</p>
+										<h4 class="my-1 text-danger">34,384,245 vnd </h4>
+										<p class="mb-0 font-13">+5.4% so với Tuần trước</p>
+									</div>
+									<div class="widgets-icons-2 rounded-circle bg-gradient-bloody text-white ms-auto"><i
+											class="bx bxs-wallet"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-4 mt-3">
+						<div class="card radius-10 border-start border-0 border-3 border-warning">
+							<div class="card-body">
+								<div class="d-flex align-items-center">
+									<div>
+										<p class="mb-0 text-secondary">Tổng số khách đến quán</p>
+										<h4 class="my-1 text-warning">1.3K</h4>
+										<p class="mb-0 font-13">+8.4% từ Tuần trước</p>
+									</div>
+									<div class="widgets-icons-2 rounded-circle bg-gradient-blooker text-white ms-auto">
+										<i class="bx bxs-group"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row ">
+					<div class="col-12 mt-3">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="card radius-10" style="height: 470px;">
+									<div class="card-body">
+										<div class="d-flex align-items-center">
+											<div>
+												<h6 class="mb-0">Sales Overview</h6>
+											</div>
+											<div class="dropdown ms-auto">
+												<a class="dropdown-toggle dropdown-toggle-nocaret" href="#"
+													data-bs-toggle="dropdown"><i
+														class='bx bx-dots-horizontal-rounded font-22 text-option'></i>
+												</a>
+												<ul class="dropdown-menu">
+													<li><a class="dropdown-item" href="javascript:;">Action</a>
+													</li>
+													<li><a class="dropdown-item" href="javascript:;">Another action</a>
+													</li>
+													<li>
+														<hr class="dropdown-divider">
+													</li>
+													<li><a class="dropdown-item" href="javascript:;">Something else
+															here</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="d-flex align-items-center ms-auto font-13 gap-2 my-3">
+											<span class="border px-1 rounded cursor-pointer"><i
+													class="bx bxs-circle me-1" style="color: #14abef"></i>Sales</span>
+											<span class="border px-1 rounded cursor-pointer"><i
+													class="bx bxs-circle me-1" style="color: #ffc107"></i>Visits</span>
+										</div>
+										<div class="chart-container-1" style="">
+											<canvas id="chart1"></canvas>
+										</div>
+									</div>
+									<div
+										class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-0 row-group text-center border-top">
+										<div class="col">
+											<div class="p-3">
+												<h5 class="mb-0">24.15M</h5>
+												<small class="mb-0">Overall Visitor <span> <i
+															class="bx bx-up-arrow-alt align-middle"></i>
+														2.43%</span></small>
+											</div>
+										</div>
+										<div class="col">
+											<div class="p-3">
+												<h5 class="mb-0">12:38</h5>
+												<small class="mb-0">Visitor Duration <span> <i
+															class="bx bx-up-arrow-alt align-middle"></i>
+														12.65%</span></small>
+											</div>
+										</div>
+										<div class="col">
+											<div class="p-3">
+												<h5 class="mb-0">639.82</h5>
+												<small class="mb-0">Pages/Visit <span> <i
+															class="bx bx-up-arrow-alt align-middle"></i>
+														5.62%</span></small>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-12 ">
+										<div class="card radius-10">
+											<div class="card-body">
+												<div class="d-flex align-items-center">
+													<div>
+														<h6 class="mb-0">Trending Products</h6>
+													</div>
+													<div class="dropdown ms-auto">
+														<a class="dropdown-toggle dropdown-toggle-nocaret" href="#"
+															data-bs-toggle="dropdown"><i
+																class='bx bx-dots-horizontal-rounded font-22 text-option'></i>
+														</a>
+														<ul class="dropdown-menu">
+															<li><a class="dropdown-item" href="javascript:;">Action</a>
+															</li>
+															<li><a class="dropdown-item" href="javascript:;">Another
+																	action</a>
+															</li>
+															<li>
+																<hr class="dropdown-divider">
+															</li>
+															<li><a class="dropdown-item" href="javascript:;">Something
+																	else here</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="chart-container-2 mt-4" style="height: 130px;">
+													<div class="row">
+														<div class="col-md-8">
+															<canvas id="chart2"
+																style="transform: translateY(-20px);"></canvas>
+														</div>
+														<div class="col-md-4" style="transform: translateY(-20px);">
+															<ul class="list-group list-group-flush">
+																<li
+																	class="list-group-item d-flex bg-transparent justify-content-between align-items-center">
+																	Jeans <span
+																		class="badge bg-success rounded-pill">25</span>
+																</li>
+																<li
+																	class="list-group-item d-flex bg-transparent justify-content-between align-items-center">
+																	T-Shirts <span
+																		class="badge bg-danger rounded-pill">10</span>
+																</li>
+																<li
+																	class="list-group-item d-flex bg-transparent justify-content-between align-items-center">
+																	Shoes <span
+																		class="badge bg-primary rounded-pill">65</span>
+																</li>
+																<li
+																	class="list-group-item d-flex bg-transparent justify-content-between align-items-center">
+																	Lingerie <span
+																		class="badge bg-warning text-dark rounded-pill">14</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-6">
+										<div class="card radius-10 bg-success" style="height: 100px;">
+											<div class="card-body">
+												<div class="d-flex align-items-center">
+													<div>
+														<p class="mb-0 text-white">
+															<font style="vertical-align: inherit;">
+																<font style="vertical-align: inherit;">Doanh thu từ
+																	WEBSITE
+																	trong Tháng</font>
+															</font>
+														</p>
+														<h4 class="my-1 text-white">
+															<font style="vertical-align: inherit;">
+																<font style="vertical-align: inherit;">36,093,372</font>
+															</font>
+														</h4>
+														<p class="mb-0 font-13 text-dark"><i
+																class="bx bxs-down-arrow align-middle"></i>
+															<font style="vertical-align: inherit;">
+																<font style="vertical-align: inherit;">3,083,971 so với
+																	tuần
+																	trước
+																</font>
+															</font>
+														</p>
+													</div>
+													<div class="widgets-icons bg-white text-success ms-auto"><i
+															class="bx bxs-wallet"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="card radius-10 bg-info" style="height: 100px;">
+											<div class="card-body">
+												<div class="d-flex align-items-center">
+													<div>
+														<p class="mb-0 text-dark">
+															<font style="vertical-align: inherit;">
+																<font style="vertical-align: inherit;">Tổng số khách
+																	ORDER
+																	qua
+																	WEBSITE</font>
+															</font>
+														</p>
+														<h4 class="my-1 text-dark">
+															<font style="vertical-align: inherit;">
+																<font style="vertical-align: inherit;">1,381</font>
+															</font>
+														</h4>
+														<p class="mb-0 font-13 text-dark"><i
+																class="bx bxs-up-arrow align-middle"></i>
+															<font style="vertical-align: inherit;">
+																<font style="vertical-align: inherit;">213 từ tuần trước
+																</font>
+															</font>
+														</p>
+													</div>
+													<div class="widgets-icons bg-white text-dark ms-auto"><i
+															class="bx bxs-group"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-6">
+										<div class="card flex-fill radius-10 bg-danger" style="height: 100px;">
+											<div class="card-body">
+												<div class="d-flex align-items-center">
+													<div>
+														<p class="mb-0 text-white">
+															<font style="vertical-align: inherit;">
+																<font style="vertical-align: inherit;"><b>Giờ Cao Điểm
+																		của
+																		Quán</b>
+																</font>
+															</font>
+														</p>
+														<h5 class="my-1 text-center text-white">
+															<font style="vertical-align: inherit;">
+																<font style="vertical-align: inherit;">06:00 AM - 08:30
+																	AM
+																</font>
+															</font>
+														</h5>
+
+														<h5 class="my-1 text-center text-white">
+															<font style="vertical-align: inherit;">
+																<font style="vertical-align: inherit;">19:00 PM - 20:00
+																	PM
+																</font>
+															</font>
+														</h5>
+
+													</div>
+													<div class="widgets-icons bg-white text-danger ms-auto"><i
+															class="bx bxs-binoculars"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="card radius-10 bg-warning" style="height: 100px;">
+											<div class="card-body">
+												<div class="d-flex align-items-center">
+													<div>
+														<p class="mb-0 text-dark">
+															<font style="vertical-align: inherit;">
+																<font style="vertical-align: inherit;">Tỷ lệ thoát
+																</font>
+															</font>
+														</p>
+														<h4 class="my-1 text-dark">
+															<font style="vertical-align: inherit;">
+																<font style="vertical-align: inherit;">34,46%</font>
+															</font>
+														</h4>
+														<p class="mb-0 font-13 text-dark"><i
+																class="bx bxs-down-arrow align-middle"></i>
+															<font style="vertical-align: inherit;">
+																<font style="vertical-align: inherit;">12,2% so với tuần
+																	trước
+																</font>
+															</font>
+														</p>
+													</div>
+													<div class="widgets-icons bg-white text-dark ms-auto"><i
+															class="bx bx-line-chart-down"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+			<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i
+					class='bx bxs-up-arrow-alt'></i></a>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script src="assets/admin/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/admin/js/jquery.min.js"></script>
+	<script src="assets/admin/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/admin/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/admin/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="assets/admin/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+	<script src="assets/admin/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="assets/admin/plugins/chartjs/js/Chart.min.js"></script>
+	<script src="assets/admin/plugins/chartjs/js/Chart.extension.js"></script>
+	<script src="assets/admin/js/index.js"></script>
+	<!--app JS-->
+	<script src="assets/admin/js/app.js"></script>
+</body>
+
+</html>
